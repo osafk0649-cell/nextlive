@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#172554">
+
+    <title>My Dynamic Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <span class="eyebrow">WELCOME TO MY BLOG</span>
+            <h1>My Dynamic Blog</h1>
+            <p>Discover ideas, learn something new.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <div>
+                <h2>Explore Articles</h2>
+                <p>Learn, explore and grow with every post.</p>
+            </div>
+            <span class="blog-badge">✦ Knowledge Hub</span>
+        </section>
+
+        <section class="controls" aria-label="Blog controls">
+            <div class="search-box">
+                <span class="search-icon" aria-hidden="true">⌕</span>
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="Search blog posts by title..."
+                    aria-label="Search blog posts by title"
+                >
+            </div>
+
+            <button id="reloadButton" type="button">
+                <span aria-hidden="true">↻</span>
+                Reload Posts
+            </button>
+        </section>
+
+        <p id="statusMessage" role="status" aria-live="polite">
+            Loading posts...
+        </p>
+
+        <section
+            id="postsContainer"
+            class="posts-grid"
+            aria-label="Blog posts"
+        ></section>
+
+        <footer class="footer">
+            <p>Made with <span>♥</span> and JavaScript</p>
+            <p>© 2026 My Dynamic Blog</p>
+        </footer>
+    </main>
+</body>
+</html>
